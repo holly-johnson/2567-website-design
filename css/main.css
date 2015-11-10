@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 80%; /*original width was 1170px*/
+	background-color: black;
+	margin: 0 auto;
+}
+
+.row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 0 20px 20px 0;
+}
+
+[class*="col-"]:last-of-type {
+	float: left;
+	padding-right: 0;
+}
+
+[class*="col-"] div {
+	height: 300px;
+}
+
+/*---------------SINGLE COLUMNS--------------*/
+
+.col-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 50%;
+}
+
+.col-1-3 {
+	width: 33.33%;
+}
+
+.col-1-4 {
+	width: 25%;
+}
+
+.col-1-5 {
+	width: 20%;
+}
+
+.col-1-6 {
+	width: 16.66%;
+}
+
+.col-1-7 {
+	width: 14.28%
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-1-9 {
+	width: 11.11%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%;
+}
+
+.col-1-12 {
+	width: 8.33%;
+}
+
+/*---------------PARTIAL COLUMNS--------------*/
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-3-4 {
+	width: 75%;
+}
+
+.col-2-5 {
+	width: 40%;
+}
+
+.col-3-5 {
+	width: 60%;
+}
+
+.col-2-6 {
+	width: 16.66%;
+}
+
+.col-4-6 {
+	width: 83.33%;
+}
+
+.col-3-7 {
+	width: 14.28%;
+}
+
+.col-4-7 {
+	width: 85.7%;
+}
+
+.col-3-8 {
+	width: 37.5%;
+}
+
+.col-5-8 {
+	width: 62.5%;
+}
+
+.col-3-9 {
+	width: 11.11%;
+}
+
+.col-6-9 {
+	width: 88.88%; 
+}
+
+.col-4-10 {
+	width: 40%;
+}
+
+.col-6-10 {
+	width: 60%;
+}
+
+.col-9-11 {
+	width: 81.81%;
+}
+
+.col-2-11 {
+	width: 18.18%;
+}
+
+.col-3-12 {
+	width: 8.33%;
+}
+
+.col-9-12 {
+	width: 91.67%;
+}
+
+/*---------------DIV COLORS SINGLE COLUMNS--------------*/
+
+.col-1 div {
+	background-color: red;
+}
+
+.col-1-2 div {
+	background-color: orange;
+}
+
+.col-1-3 div {
+	background-color: purple;
+}
+
+.col-1-4 div {
+	background-color: pink;
+}
+
+.col-1-5 div {
+	background-color: yellow;
+}
+
+.col-1-6 div {
+	background-color: green;
+}
+
+.col-1-7 div {
+	background-color: teal;
+}
+
+.col-1-8 div {
+	background-color: maroon;
+}
+
+.col-1-9 div {
+	background-color: aqua;
+}
+
+.col-1-10 div {
+	background-color: lightgreen;
+}
+
+.col-1-11 div {
+	background-color: darkseagreen;
+}
+
+.col-1-12 div {
+	background-color: slategrey;
+}
+
+/*---------------DIV COLORS PARTIAL COLUMNS--------------*/
+
+
+.col-2-3 div {
+	background-color: green;
+}
+
+.col-3-4 div {
+	background-color: green;
+}
+
+.col-2-5 div {
+	background-color: darkviolet;
+}
+
+.col-3-5 div {
+	background-color: darkviolet;
+}
+
+.col-2-6 div {
+	background-color: ivory;
+}
+
+.col-4-6 div {
+	background-color: ivory;
+}
+
+.col-3-7 div {
+	background-color: olivedrab;
+}
+
+.col-4-7 div {
+	background-color: olivedrab;
+}
+
+.col-3-8 div {
+	background-color: darkkhaki;
+}
+
+.col-5-8 div {
+	background-color: darkkhaki;
+}
+
+.col-6-9 div {
+	background-color: indianred;
+}
+
+.col-3-9 div {
+	background-color: indianred;
+}
+
+.col-4-10 div {
+	background-color: palegoldenrod;
+}
+
+.col-6-10 div {
+	background-color: palegoldenrod;
+}
+
+.col-9-11 div {
+	background-color: tomato;
+}
+
+.col-2-11 div {
+	background-color: tomato;
+}
+
+.col-3-12 div {
+	background-color: lightsalmon;
+}
+
+.col-9-12 div {
+	background-color: lightsalmon;
+}
+
+/*---------------MEDIA QUERIES--------------*/
+
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+		width: 98%;
+	}
+	
+	.col-1-3, .col-2-3, .col-3-4, .col-1-4, .col-1-5, .col-1-6, .col-1-7, .col-1-8, .col-1-9, .col-1-10, .col-1-11, .col-1-12 {
+		width: 100%;
+		padding: 0 0 20px 0;
+	}
+}
+
