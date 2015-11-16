@@ -1,6 +1,363 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Table of Contents
+
+--------------------------------1 Typography
+--------------------------------------2.1 Body
+--------------------------------------2.2 Headings
+--------------------------------------2.3 Buttons
+--------------------------------3 Navigation Menu
+--------------------------------------3.1 Main
+--------------------------------------3.2 Footer
+--------------------------------4 Structure
+--------------------------------------4.1 Site Content
+--------------------------------------4.2 Site Form
+--------------------------------------4.3 Site Header
+--------------------------------------4.4 Site Footer
+--------------------------------5 Media
+--------------------------------------5.1 Sprites
+--------------------------------------5.2 Background Images
+--------------------------------6 Utility
+--------------------------------------6.1 Colors
+--------------------------------------6.1 Floats, Positions, Displays
+
+
+/*---------------------------------TYPOGRAPHY----------------------------------*/
+
+
+/*--------------------Body---------------------*/
+
+html {
+	font-size: 15px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	color: #999;
+	font-weight: 100;
+    line-height: 1.5rem;
+}
+
+header p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+nav a {
+	font-weight: 100;
+}
+
+header div#hero {
+	text-align: center;
+}
+
+form {
+	color: white;
+}
+
+footer, footer a {
+	color: white;
+	text-decoration: none;
+}
+
+address {
+	font-style: normal;
+	font-weight: 100;
+}
+
+/*--------------------Headings---------------------*/
+
+h1 {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    color: white;
+    line-height: 5.5rem;
+	margin: 0 0 30px 0;
+}
+
+h2 {
+	font-size: 2.75rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+	color: #49af99;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#bg-about-us h2, #bg-about-us h3, #bg-about-us p, #bg-teal h2 {
+	color: white;
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 200;
+	margin-top: 0;
+	color: #49af99;
+}
+
+.col-1-4 h3 {
+	margin-bottom: 0;
+}
+
+#bg-about-us h3 {
+	font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section#bg-teal h3 {
+	color: white;
+	font-weight: 500;
+}
+
+dd {
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+
+dt {
+    color: white;
+    font-weight: 100;
+}
+
+.ebill h3, .ebill a {
+	color: #37945d;
+}
+
+.managed-plans h3, .managed-plans a {
+	color: #bc61b4;
+}
+
+.student-choice h3, .student-choice a {
+	color: #457cbc;
+}
+
+.estore h3, .estore a {
+	color: #e28175;
+}
+
+.cashier h3, .cashier a {
+	color: #c98836;
+}
+
+.hosted h3, .hosted a {
+	color: #49af99;
+}
+
+.sponsored h3, .sponsored a {
+	color: #bc455d;
+}
+
+.refunds h3, .refunds a {
+	color: #7d66d3;
+}
+
+/*--------------------Buttons---------------------*/
+
+.btn {
+	background-color: white;
+	border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border: 3px solid white;
+    padding: 10px 40px;
+    color: #49af99;
+    text-transform: uppercase;
+    font-weight: 100;
+	text-decoration: none;
+}
+
+a.btn:hover {
+	background-color: #49af99;
+    color: white;
+}
+
+/*---------------------------------NAVIGATION----------------------------------*/
+
+ul li {
+	display: inline-block;
+}
+
+nav {
+	text-align: right;
+}
+
+/*--------------------Main---------------------*/
+
+nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+nav ul li a:hover {
+    font-weight: 500;
+}
+
+
+
+/*--------------------Footer---------------------*/
+
+ul {
+	text-align: right;
+}
+
+footer li {
+    padding-left: 20px;
+}
+
+
+
+/*---------------------------------STRUCTURE----------------------------------*/
+
+
+/*--------------------Content---------------------*/
+
+.col-1-4 img, .col-1-4 header {
+	display: inline-block;
+}
+
+header#hero div.row p.col-2-3.center-block {
+	padding-bottom: 50px;
+}
+
+div.col-3-5 {
+	padding-bottom: 5px;
+}
+
+section {
+    padding: 70px 0 70px 0;
+}
+
+section.wrapper div.row {
+	margin-bottom: 50px;
+}
+
+#bg-about-us div.wrapper div.row {
+	padding-bottom: 30px;
+}
+
+/*--------------------Form---------------------*/
+
+label, input, textarea {
+	display: block;
+}
+
+input, textarea {
+	width: 60%;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+}
+
+textarea {
+	height: 120px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    text-transform: uppercase;
+    background-color: white;
+    color: #49af99;
+}
+
+/*--------------------Header---------------------*/
+
+header nav ul li a {
+	padding-left: 30px;
+}
+
+header div#hero {
+	padding: 220px 0 120px 0;
+}
+
+header div#hero div.wrapper div.row {
+	padding-bottom: 40px;
+}
+
+/*--------------------Footer---------------------*/
+
+/*---------------------------------MEDIA----------------------------------*/
+
+
+/*--------------------Sprites---------------------*/
+/*--------------------Background Images---------------------*/
+
+#hero {
+	background: url(../img/hero.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: relative;
+}
+
+#bg-about-us {
+	background: url(../img/bg-about-us.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: relative;
+}
+
+/*---------------------------------UTILITY----------------------------------*/
+
+
+/*--------------------Colors---------------------*/
+
+#bg-teal {
+	background-color: #49af99;
+}
+
+#bg-nav {
+	background-color: rgba(73,175,153,.6);
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+#bg-dark-gray {
+	background-color: #666;
+}
+
+/*--------------------Floats & Positions---------------------*/
+
+.center-block {
+	margin: 0 auto;
+	float: none !important;
+	text-align: center;
+}
+
+
+
+
+.gray-rule {
+	border-top: 1px solid #666;
+	width: 12%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+.white-rule {
+	border-top: 1px solid white;
+	width: 12%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+
+
+
+
+
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border;
@@ -9,7 +366,6 @@
 
 .wrapper {
 	width: 80%; /*original width was 1170px*/
-	background-color: black;
 	margin: 0 auto;
 }
 
@@ -40,9 +396,11 @@ figure {
 	padding-right: 0;
 }
 
+/* ====== take out for services icons 
 [class*="col-"] div {
 	height: 300px;
 }
+=======*/
 
 /*---------------SINGLE COLUMNS--------------*/
 
@@ -180,10 +538,6 @@ figure {
 
 .col-1-3 div {
 	background-color: purple;
-}
-
-.col-1-4 div {
-	background-color: pink;
 }
 
 .col-1-5 div {
