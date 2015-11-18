@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/normalize.css"
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <title>Untitled Document</title>
@@ -17,9 +17,9 @@
     <div id="bg-nav">
         <div class="wrapper">
             <div class="row">
-                <div class="col-2-5">       
-                    <img src="" alt="">
-                </div>
+                <figure class="col-2-5">       
+                    <img src="img/logo.png" alt="logo">
+                </figure>
                 <div class="col-3-5"> 
                    	<nav>
                         <ul>
@@ -52,9 +52,9 @@
             <h2>Services</h2>
             <div class="gray-rule"></div>
         </header>
-        <div class="row">
+        <div class="row mb-zero">
             <section class="col-1-4 ebill">
-                <img src="img/ebill-icon.png">
+                <img src="img/ebill-icon.png" alt="ebill icon">
                 <header>
                     <h3>eBill & ePay</h3>
                 </header>
@@ -62,7 +62,7 @@
                 <a href="#">Learn more</a>
             </section>
             <section class="col-1-4 managed-plans">
-                <img src="img/managed-icon.png">
+                <img src="img/managed-icon.png" alt="managed plans icon">
                 <header>
                     <h3>Actively Managed<br>Payment Plans</h3>
                 </header>
@@ -70,15 +70,15 @@
                 <a href="#">Learn more</a>
             </section>
             <section class="col-1-4 student-choice">
-                <img src="img/student-choice-icon.png">
+                <img src="img/student-choice-icon.png" alt="student choice icon">
                 <header>
                     <h3>Student<br>Choice Refunds</h3>
                 </header>
                 <p>Offer an alternative refund method that limits fee exposure to students, promotes choice, and protects your institution from increased scrutiny surrounding refunds disbursement.</p>
                 <a href="#">Learn more</a>
             </section>
-            <section class="col-1-4 estore">
-                <img src="img/estore-icon.png">
+            <section class="col-1-4 estore mb-zero">
+                <img src="img/estore-icon.png" alt="estore icon">
                 <header>
                     <h3>eStore</h3>
                 </header>
@@ -88,7 +88,7 @@
         </div>
         <div class="row">
             <section class="col-1-4 cashier">
-                <img src="img/cashier-icon.png">
+                <img src="img/cashier-icon.png" alt="cashiering icon">
                 <header>
                     <h3>Cashiering</h3>
                 </header>
@@ -96,7 +96,7 @@
                 <a href="#">Learn more</a>
             </section>
             <section class="col-1-4 hosted">
-                <img src="img/hosted-icon.png">
+                <img src="img/hosted-icon.png" alt="hosted plans icon">
                 <header>
                     <h3>Hosted Payments</h3>
                 </header>
@@ -104,7 +104,7 @@
                 <a href="#">Learn more</a>
             </section>
             <section class="col-1-4 sponsored">
-                <img src="img/sponsored-icon.png">
+                <img src="img/sponsored-icon.png" alt="sponsored payments icon">
                 <header>
                     <h3>Sponsored<br>Payments</h3>
                 </header>
@@ -112,7 +112,7 @@
                 <a href="#">Learn more</a>
             </section>
             <section class="col-1-4 refunds">
-                <img src="img/refunds-icon.png">
+                <img src="img/refunds-icon.png" alt="refunds icon">
                 <header>
                     <h3>Refunds</h3>
                 </header>
@@ -164,7 +164,7 @@
     	<h2>Why Choose Us</h2>
         <div class="gray-rule"></div>
     </header>
-	<div class="row">    
+	<div class="row mb-zero">    
         <section class="col-1-3">
             <header>
                 <h3>Integrated</h3>
@@ -226,7 +226,7 @@
                     <label>Message
                         <textarea rows="6"></textarea>
                     </label>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="submit" id="submit">
                 </form>
             </div>
             <div class="col-1-2">
@@ -245,9 +245,9 @@
                     <h3>Find Us on Social Media</h3>
                 </header>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="http://www.facebook.com" target="_blank"></a></li>
+                    <li><a href="http://www.twitter.com" target="_blank"></a></li>
+                    <li><a href="https://plus.google.com/" target="_blank"></a></li>
                 </ul>
             </div>
     	</div>
@@ -259,16 +259,16 @@
 <footer id="bg-dark-gray">
 	<div class="wrapper">
     	<div class="row">
-        	<div class="col-1-3">
-            	<img>
-            </div>
+        	<figure class="col-1-3">
+            	<img src="img/logo.png" alt="logo">
+            </figure>
             <address class="col-1-3">1234 State Street<br>Lincoln NE</address>
             <div class="col-1-3">
             	<ul>
                 	<li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Connect</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#bg-about-us">About</a></li>
+                    <li><a href="#bg-teal">Connect</a></li>
                 </ul>
             </div>
         </div>
